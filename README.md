@@ -37,10 +37,7 @@ struct ContentView: View {
                 .imageScale(.large)
             Text("Hello, world!")
         }
-        ._viewDebug { data in
-            let string = String(data: data ?? Data(), encoding: .utf8) ?? ""
-            print(string)
-        }
+        ._viewDebug(exportTo: FileManager.default.temporaryDirectory.appendingPathComponent("example.json"))
     }
 }
 ```

@@ -12,12 +12,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Image(systemName: "globe")
-                .imageScale(.large)
+                ._viewDebug()
             Text("Hello, world!")
-        }
-        ._viewDebug { data in
-            let string = String(data: data ?? Data(), encoding: .utf8) ?? ""
-            print(string)
+                ._viewDebug(exportTo: FileManager.default.temporaryDirectory.appendingPathComponent("text_dump.json"))
         }
     }
 }
