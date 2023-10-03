@@ -55,7 +55,7 @@ The example output can be found at [example.json](Resources/example.json)
 
 Currently only `_UIHostingView` / `NSHostingView` exposes the `_viewDebugData()` method. So we need to wrap it in `UIHostingController` / `NSHostingController` to get the debug data.
 
-If you can intrested in the implementation of `_ViewDebug`, you can check my WIP implementation of [_ViewDebug](https://github.com/Kyle-Ye/OpenSwiftUI/blob/1bebc5d5d8a8c1228da9c262b599ac256f9f1467/Sources/OpenSwiftUI/View/Debug/TODO/_ViewDebug.swift) here.
+If you are interested in the implementation detail of `_ViewDebug`, you can check my WIP implementation of [_ViewDebug](https://github.com/Kyle-Ye/OpenSwiftUI/blob/1bebc5d5d8a8c1228da9c262b599ac256f9f1467/Sources/OpenSwiftUI/View/Debug/TODO/_ViewDebug.swift) here.
 
 ## License
 
